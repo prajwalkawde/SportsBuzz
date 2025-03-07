@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rlMainDataContainer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+<!--    <com.fantasy.team.cricpro.CustomTextView-->
+<!--        android:id="@+id/tvDetailedPlayerAnalysis"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:background="@color/shadow"-->
+<!--        android:gravity="center_vertical"-->
+<!--        android:padding="5dp"-->
+<!--        android:textAllCaps="true"-->
+<!--        android:textColor="@color/withdrawal_text"-->
+<!--        android:textSize="12sp"-->
+<!--        android:visibility="visible"-->
+<!--        app:fontTextStyle="5" />-->
+
+<!--    <LinearLayout-->
+<!--        android:id="@+id/llPlayerDetailsContainer"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="vertical"-->
+<!--        android:visibility="gone">-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="horizontal"-->
+<!--            android:padding="5dp">-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_weight="3.5"-->
+<!--                android:gravity="top"-->
+<!--                android:orientation="vertical"-->
+<!--                android:paddingLeft="5dp">-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:orientation="horizontal"-->
+<!--                    android:paddingTop="5dp">-->
+
+<!--                    <LinearLayout-->
+<!--                        android:id="@+id/llDotPlayer"-->
+<!--                        android:layout_width="6dp"-->
+<!--                        android:layout_height="6dp"-->
+<!--                        android:layout_gravity="center"-->
+<!--                        android:gravity="center"-->
+<!--                        android:orientation="vertical"-->
+<!--                        android:paddingTop="5dp"-->
+<!--                        android:visibility="visible" />-->
+
+<!--                    <com.fantasy.team.cricpro.CustomTextView-->
+<!--                        android:id="@+id/txtPlayerName"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:ellipsize="end"-->
+<!--                        android:gravity="center_vertical"-->
+<!--                        android:maxLines="1"-->
+<!--                        android:paddingLeft="5dp"-->
+<!--                        android:text="jhnghj ghjgh"-->
+<!--                        android:textColor="@color/black_dark"-->
+<!--                        android:textSize="13sp"-->
+<!--                        android:textStyle="bold"-->
+<!--                        app:fontTextStyle="8" />-->
+<!--                </LinearLayout>-->
+
+<!--                <com.fantasy.team.cricpro.CustomTextView-->
+<!--                    android:id="@+id/txtPlayerTeamName"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="5dp"-->
+<!--                    android:background="@drawable/drawable_white_text_bg"-->
+<!--                    android:gravity="center"-->
+<!--                    android:paddingLeft="9dp"-->
+<!--                    android:paddingTop="2dp"-->
+<!--                    android:paddingRight="9dp"-->
+<!--                    android:paddingBottom="2dp"-->
+<!--                    android:text="hjh"-->
+<!--                    android:textColor="@color/white"-->
+<!--                    android:textSize="8sp"-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:visibility="visible" />-->
+<!--            </LinearLayout>-->
+
+<!--            <com.fantasy.team.cricpro.CustomTextView-->
+<!--                android:id="@+id/txtPlayerDescription"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_weight="6.5"-->
+<!--                android:ellipsize="end"-->
+<!--                android:gravity="center_vertical"-->
+<!--                android:maxLines="5"-->
+<!--                android:paddingTop="5dp"-->
+<!--                android:paddingBottom="10dp"-->
+<!--                android:text="fduif uudhiusdh sdsuifuifhuishfuisdh uifhsduifh iusdhfuih fuih df sdfui suifuis dfgs fgsfguysgfusygfuy"-->
+<!--                android:textColor="@color/greyDark"-->
+<!--                android:textSize="12sp"-->
+<!--                app:fontTextStyle="5" />-->
+<!--        </LinearLayout>-->
+
+<!--        <View-->
+<!--            android:id="@+id/viewBelowPlayerData"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="1dp"-->
+<!--            android:background="@color/shadow" />-->
+<!--    </LinearLayout>-->
+
+<!--    <LinearLayout-->
+<!--        android:id="@+id/llPlayerDetailsContainerStar"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="vertical"-->
+<!--        android:visibility="gone">-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="horizontal"-->
+<!--            android:padding="5dp">-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="3.5"-->
+<!--                android:orientation="vertical"-->
+<!--                android:paddingLeft="3dp">-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:orientation="horizontal">-->
+
+<!--                    <LinearLayout-->
+<!--                        android:id="@+id/llDotPlayerStar"-->
+<!--                        android:layout_width="10dp"-->
+<!--                        android:layout_height="10dp"-->
+<!--                        android:layout_gravity="center"-->
+<!--                        android:gravity="center"-->
+<!--                        android:orientation="vertical"-->
+<!--                        android:visibility="visible" />-->
+
+<!--                    <com.fantasy.team.cricpro.CustomTextView-->
+<!--                        android:id="@+id/txtPlayerNameStar"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:ellipsize="end"-->
+<!--                        android:gravity="center_vertical"-->
+<!--                        android:maxLines="1"-->
+<!--                        android:paddingLeft="5dp"-->
+<!--                        android:text="jhnghj ghjgh"-->
+<!--                        android:textColor="@color/black_dark"-->
+<!--                        android:textSize="13sp"-->
+<!--                        android:textStyle="bold"-->
+<!--                        app:fontTextStyle="8" />-->
+<!--                </LinearLayout>-->
+
+<!--                <com.fantasy.team.cricpro.CustomTextView-->
+<!--                    android:id="@+id/txtPlayerTeamNameStar"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="5dp"-->
+<!--                    android:background="@drawable/drawable_white_text_bg"-->
+<!--                    android:gravity="center"-->
+<!--                    android:paddingLeft="9dp"-->
+<!--                    android:paddingTop="2dp"-->
+<!--                    android:paddingRight="9dp"-->
+<!--                    android:paddingBottom="2dp"-->
+<!--                    android:text="hjh"-->
+<!--                    android:textColor="@color/white"-->
+<!--                    android:textSize="8sp"-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:visibility="visible"-->
+<!--                    app:fontTextStyle="8" />-->
+<!--            </LinearLayout>-->
+
+<!--            <com.fantasy.team.cricpro.CustomTextView-->
+<!--                android:id="@+id/txtPlayerDescriptionStar"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="6.5"-->
+<!--                android:ellipsize="end"-->
+<!--                android:gravity="center_vertical"-->
+<!--                android:maxLines="5"-->
+<!--                android:text=""-->
+<!--                android:textColor="@color/greyDark"-->
+<!--                android:textSize="12sp"-->
+<!--                app:fontTextStyle="5" />-->
+<!--        </LinearLayout>-->
+
+<!--        <View-->
+<!--            android:id="@+id/viewBelowPlayerDataStar"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="1dp"-->
+<!--            android:background="@color/shadow" />-->
+
+
+<!--    </LinearLayout>-->
+</RelativeLayout>

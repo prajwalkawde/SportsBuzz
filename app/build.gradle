@@ -1,0 +1,228 @@
+plugins {
+    id 'com.android.application'
+    id 'com.google.gms.google-services' // Google Services plugin
+    id 'com.google.firebase.crashlytics' // Firebase Crashlytics plugin
+//    id 'com.onesignal.androidsdk.onesignal-gradle-plugin' // OneSignal plugin
+}
+
+android {
+    namespace "com.fantasy.team.prediction" // Ensure this matches your package name
+    compileSdkVersion 35
+    buildToolsVersion "35.0.0"
+
+    defaultConfig {
+        applicationId "com.fantasy.team.prediction"
+        minSdkVersion 21
+        targetSdkVersion 35
+        versionCode 7
+        versionName "2.3"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+//        manifestPlaceholders = [
+//                onesignal_app_id: 'f48b62f0-17be-4a1f-9b87-21e505cf765d',
+//                onesignal_google_project_number: 'REMOTE'
+//        ]
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    dataBinding {
+        enabled = true
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    // AndroidX and Material Design
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.9.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'androidx.navigation:navigation-fragment:2.7.0'
+    implementation 'androidx.navigation:navigation-ui:2.7.0'
+    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.6.1'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.1'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.work:work-runtime:2.8.1'
+    implementation 'androidx.palette:palette:1.0.0'
+
+
+    // Networking
+    implementation 'com.android.volley:volley:1.2.1'
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+    implementation 'com.squareup.okhttp3:okhttp:5.0.0-alpha.2'
+    implementation 'com.loopj.android:android-async-http:1.4.11'
+
+    // Image Loading
+    implementation 'com.github.bumptech.glide:glide:4.15.1'
+    implementation 'com.squareup.picasso:picasso:2.8'
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+
+    // Firebase
+    implementation platform('com.google.firebase:firebase-bom:32.3.1')
+    implementation 'com.google.firebase:firebase-analytics'
+    implementation 'com.google.firebase:firebase-crashlytics'
+
+    // OneSignal
+    implementation 'com.onesignal:OneSignal:[4.8.5, 5.0.0)'
+
+    // Ads and Mediation
+    implementation 'com.google.android.ads.consent:consent-library:1.0.8'
+    implementation 'com.facebook.android:audience-network-sdk:6.15.0'
+    implementation 'com.google.ads.mediation:facebook:6.15.0.0'
+    implementation 'com.google.android.ads:mediation-test-suite:3.0.0'
+
+    // UI Components
+    implementation 'com.github.iwgang:countdownview:2.1.6'
+    implementation 'com.github.denzcoskun:ImageSlideshow:0.1.2'
+
+//    implementation 'com.github.smarteist:autoimageslider:1.4.0'
+//    implementation 'com.tbuonomo.andrui:viewpagerdotsindicator:4.1.2'
+    implementation 'com.ogaclejapan.smarttablayout:library:2.0.0@aar'
+    implementation 'com.ogaclejapan.smarttablayout:utils-v4:2.0.0@aar'
+
+    // Shimmer Layout
+    implementation 'com.facebook.shimmer:shimmer:0.5.0'
+
+    // Lottie Animation
+    implementation 'com.airbnb.android:lottie:6.1.0'
+
+    // Rating Dialog
+    implementation 'com.suddenh4x.ratingdialog:awesome-app-rating:2.4.0'
+
+    // Time Ago
+    implementation 'com.github.marlonlom:timeago:4.0.3'
+
+    // Billing
+    implementation 'com.android.billingclient:billing:6.1.0'
+
+    // Testing
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+}
+
+//buildscript {
+//    repositories {
+//        maven { url 'https://plugins.gradle.org/m2/'}
+//    }
+//    dependencies {
+//        classpath 'gradle.plugin.com.onesignal:onesignal-gradle-plugin:0.13.4'
+//    }
+//}
+//
+//plugins {
+//    id 'com.android.application'
+//    id 'com.google.gms.google-services'
+//}
+//
+//android {
+//    compileSdkVersion 34
+//    buildToolsVersion "30.0.3"
+//
+//    defaultConfig {
+//        applicationId "com.cricpro"
+//        minSdkVersion 21
+//        targetSdkVersion 34
+//        versionCode 7
+//        versionName "2.3"
+//        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+//        manifestPlaceholders = [
+//                onesignal_app_id: 'f48b62f0-17be-4a1f-9b87-21e505cf765d',
+//                onesignal_google_project_number: 'REMOTE'
+//        ]
+//}
+//
+//    buildTypes {
+//        release {
+//            minifyEnabled true
+//            shrinkResources true
+//            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+//        }
+//    }
+//    dataBinding {
+//        enabled = true
+//    }
+//    compileOptions {
+//        sourceCompatibility JavaVersion.VERSION_1_8
+//        targetCompatibility JavaVersion.VERSION_1_8
+//    }
+//}
+//
+//dependencies {
+//    implementation 'androidx.work:work-runtime:2.8.1'
+//    implementation 'com.github.iwgang:countdownview:2.1.6'
+//    implementation 'androidx.appcompat:appcompat:1.3.1'
+//    implementation 'com.google.android.material:material:1.4.0'
+//    implementation 'androidx.constraintlayout:constraintlayout:2.1.1'
+//    implementation 'androidx.navigation:navigation-fragment:2.3.5'
+//    implementation 'androidx.navigation:navigation-ui:2.3.5'
+//    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.4.0'
+//    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.0'
+//    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+//    implementation 'com.android.volley:volley:1.2.1'
+//    implementation 'com.github.bumptech.glide:glide:4.12.0'
+//    implementation 'com.google.android.ads.consent:consent-library:1.0.8'
+//    implementation 'com.google.firebase:firebase-analytics:20.0.0'
+//    implementation 'com.github.smarteist:autoimageslider:1.4.0'
+//    //shimmer layout
+//    implementation 'com.facebook.shimmer:shimmer:0.5.0'
+//    //Onesignal
+//    implementation 'com.onesignal:OneSignal:4.5.1'
+//    //Rounded ImageView
+//    implementation 'de.hdodenhof:circleimageview:3.1.0'
+//    //viewPager Indicator
+//    implementation 'com.tbuonomo.andrui:viewpagerdotsindicator:4.1.2'
+//    //Retrofit
+//    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+//    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+//    implementation 'androidx.palette:palette:1.0.0'
+//    testImplementation 'junit:junit:4.13.2'
+//    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+//    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+//    //Picaso
+//    implementation 'com.squareup.picasso:picasso:2.71828'
+//    //Rate On PlayStore
+//    implementation 'com.suddenh4x.ratingdialog:awesome-app-rating:2.3.0'
+//    //Lotti Animation
+//    implementation "com.airbnb.android:lottie:3.4.0"
+//    implementation "com.squareup.okhttp3:okhttp:5.0.0-alpha.2"
+//    implementation 'com.google.code.gson:gson:2.8.7'
+//    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+//    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+//    implementation 'com.loopj.android:android-async-http:1.4.10'
+//    implementation 'com.facebook.android:audience-network-sdk:6.15.0'
+//    implementation 'com.github.VishnuSivadasVS:Advanced-HttpURLConnection:1.2'
+//    implementation ('com.github.bumptech.glide:okhttp3-integration:4.7.1'){
+//        exclude group: 'glide-parent'
+//    }
+//    implementation platform('com.google.firebase:firebase-bom:28.0.1')
+//    //dependencies for the Crashlytics and Analytics libraries
+//    implementation 'com.google.firebase:firebase-crashlytics'
+//    implementation 'com.google.firebase:firebase-analytics'
+//
+//    //library for custom tab
+//    implementation 'com.ogaclejapan.smarttablayout:library:2.0.0@aar'
+//    implementation 'com.ogaclejapan.smarttablayout:utils-v4:2.0.0@aar'
+//    implementation 'com.github.marlonlom:timeago:4.0.3'
+//    implementation 'com.google.ads.mediation:facebook:6.5.1.1'
+//    implementation 'com.google.android.ads:mediation-test-suite:2.0.0'
+//
+//    implementation ('com.onesignal:OneSignal:3.15.3') {
+//        exclude group: 'com.google.android.gms'
+//    }
+//
+//    implementation 'com.android.billingclient:billing:6.1.0'
+//}
+//apply plugin: 'com.onesignal.androidsdk.onesignal-gradle-plugin'
+//apply plugin: 'com.google.gms.google-services'
+//apply plugin: 'com.google.firebase.crashlytics'

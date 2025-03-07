@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_500">#C81B00</color>
+    <color name="app_color">#E91B00</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="orangeText">#ff793f</color>
+    <color name="grad_1">#ED1B00</color>
+    <color name="green">#FF669900</color>
+
+    <color name="grad_2">#AB1700</color>
+
+    <!-- colors for button style -->
+
+    <color name="gradient_start_color">#8A0000</color>
+    <color name="gradient_end_color">#ED0000</color>
+    <!-- colors for tab and screent text -->
+    <color name="tab_indicator_gray">#c0c0c0</color>
+    <color name="intro_title_color">#000000</color>
+
+    <color name="lightGrey">#AFACAC</color>
+    <color name="grentext">#00FF66</color>
+    <color name="redText">#e10302</color>
+    <color name="blue">#13224b</color>
+    <color name="greay">#7e7f80</color>
+    <color name="divider">#daa8a7a7</color>
+    <color name="orange">#f8560a</color>
+
+    <color name="divider1">#bebbb8b8</color>
+    <color name="divider2">#aedcdbdb</color>
+    <color name="divider3">#fff5f5f5</color>
+    <color name="colorPrimary">#BF0000</color>
+
+    <color name="light_black">#505050</color>
+    <color name="red_dot">#ea4335</color>
+    <color name="blue_dot">#4285f4</color>
+    <color name="orange_dot">#fbbc05</color>
+    <color name="green_dot">#005923</color>
+    <color name="shadow">#e7e7e7</color>
+    <color name="shadow_medium">#cccccc</color>
+    <color name="greyDark">#8c8c8c</color>
+    <color name="black_dark">#262626</color>
+    <color name="withdrawal_text">#666666</color>
+
+
+</resources>
