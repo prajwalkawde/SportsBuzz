@@ -664,7 +664,7 @@ public class MainActivity extends Application implements BottomNavigationView.On
             navigationView.getMenu().findItem(R.id.refer_earn).setVisible(false);
 //            navigationView.getMenu().findItem(R.id.nav_profile).setVisible(false);
             navigationView.getMenu().findItem(R.id.redeem_points).setVisible(false);
-            navigationView.getMenu().findItem(R.id.nav_login).setVisible(true);
+            navigationView.getMenu().findItem(R.id.nav_login).setVisible(false);
             // perform action when user is not logged in
         }
     }

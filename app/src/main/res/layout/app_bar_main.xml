@@ -26,14 +26,14 @@
             android:background="@drawable/action_bar_background"
              >
               <LinearLayout
-                  android:gravity="center"
                   android:layout_width="match_parent"
-                  android:layout_height="match_parent">
+                  android:layout_height="match_parent"
+                  android:gravity="center"
+                  android:layout_marginEnd="35dp">
 
                   <ImageView
                       android:layout_width="226dp"
                       android:layout_height="26dp"
-                      android:layout_margin="12dp"
                       android:src="@drawable/app_header" />
 
               </LinearLayout>

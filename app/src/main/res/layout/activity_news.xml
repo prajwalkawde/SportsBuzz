@@ -24,10 +24,10 @@
                 android:layout_height="match_parent">
 
                 <ImageView
-                    android:layout_margin="12dp"
-                    android:src="@drawable/app_icon"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"/>
+                    android:src="@drawable/app_header"
+                    android:layout_width="226dp"
+                    android:layout_height="26dp"
+                    android:layout_margin="12dp"/>
 
             </LinearLayout>
 
