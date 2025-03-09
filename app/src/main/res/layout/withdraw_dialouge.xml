@@ -4,7 +4,6 @@
     android:layout_height="wrap_content"
     android:layout_gravity="center"
     android:layout_margin="10dp"
-    android:background="@drawable/edittext_border"
     android:orientation="vertical">
 
     <RelativeLayout
@@ -90,7 +89,6 @@
                 android:orientation="vertical">
 
                 <TextView
-                    android:background="@drawable/edittext_border"
                     android:textIsSelectable="false"
                     android:maxLines="1"
                     android:id="@+id/editText_amount"

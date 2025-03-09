@@ -96,7 +96,7 @@
 
         <provider
             android:name="androidx.core.content.FileProvider"
-            android:authorities="com.cricpro.app.fileprovider"
+            android:authorities="com.fantasy.team.prediction.fileprovider"
             android:exported="false"
             android:grantUriPermissions="true">
             <meta-data

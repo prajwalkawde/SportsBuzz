@@ -60,8 +60,7 @@ import com.fantasy.team.prediction.util.SaveSharedPreference;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationView;
 import com.onesignal.OneSignal;
-import com.suddenh4x.ratingdialog.AppRating;
-import com.suddenh4x.ratingdialog.preferences.RatingThreshold;
+
 //import com.vishnusivadas.advanced_httpurlconnection.PutData;
 
 import org.json.JSONArray;
@@ -174,13 +173,6 @@ public class MainActivity extends Application implements BottomNavigationView.On
         toggle.syncState();
 
         queryPurchase();
-        new AppRating.Builder(this)
-                .setMinimumLaunchTimes(5)
-                .setMinimumDays(7)
-                .setMinimumLaunchTimesToShowAgain(5)
-                .setMinimumDaysToShowAgain(10)
-                .setRatingThreshold(RatingThreshold.FOUR)
-                .showIfMeetsConditions();
 
 
         mIntentFilter = new IntentFilter();

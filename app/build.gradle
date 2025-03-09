@@ -70,7 +70,7 @@ dependencies {
     // Firebase
     implementation platform('com.google.firebase:firebase-bom:32.3.1')
     implementation 'com.google.firebase:firebase-analytics'
-    implementation 'com.google.firebase:firebase-crashlytics'
+    implementation 'com.google.firebase:firebase-crashlytics:18.4.0'
 
     // OneSignal
     implementation 'com.onesignal:OneSignal:[4.8.5, 5.0.0)'
@@ -97,7 +97,7 @@ dependencies {
     implementation 'com.airbnb.android:lottie:6.1.0'
 
     // Rating Dialog
-    implementation 'com.suddenh4x.ratingdialog:awesome-app-rating:2.4.0'
+    //implementation 'com.suddenh4x.ratingdialog:awesome-app-rating:2.4.0'
 
     // Time Ago
     implementation 'com.github.marlonlom:timeago:4.0.3'
