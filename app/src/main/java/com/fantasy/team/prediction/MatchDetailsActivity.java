@@ -29,7 +29,7 @@ public class MatchDetailsActivity extends Application {
         tabLayout1 = findViewById(R.id.tabLayout1);
         n_tab1 = findViewById(R.id.tab1);
         n_tab2 = findViewById(R.id.tab2);
-      //  n_tab3 = findViewById(R.id.tab3);
+        n_tab3 = findViewById(R.id.tab3);
 
 
         InfoFragment infoFragment = new InfoFragment();
@@ -49,7 +49,7 @@ public class MatchDetailsActivity extends Application {
                     getSupportFragmentManager().beginTransaction().replace(R.id.frame_container_details, playerFragment).commit();
                 }
                 else{
-                   // getSupportFragmentManager().beginTransaction().replace(R.id.frame_container_details, premiumContentFragment).commit();
+                   getSupportFragmentManager().beginTransaction().replace(R.id.frame_container_details, premiumContentFragment).commit();
 
                 }
             }

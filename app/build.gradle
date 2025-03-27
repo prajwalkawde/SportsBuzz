@@ -14,8 +14,8 @@ android {
         applicationId "com.fantasy.team.prediction"
         minSdkVersion 21
         targetSdkVersion 35
-        versionCode 7
-        versionName "2.3"
+        versionCode 8
+        versionName "1.2"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
 //        manifestPlaceholders = [
 //                onesignal_app_id: 'f48b62f0-17be-4a1f-9b87-21e505cf765d',
@@ -97,7 +97,7 @@ dependencies {
     implementation 'com.airbnb.android:lottie:6.1.0'
 
     // Rating Dialog
-    implementation 'com.suddenh4x.ratingdialog:awesome-app-rating:2.4.0'
+    //implementation 'com.suddenh4x.ratingdialog:awesome-app-rating:2.4.0'
 
     // Time Ago
     implementation 'com.github.marlonlom:timeago:4.0.3'

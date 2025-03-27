@@ -2,7 +2,7 @@ package com.fantasy.team.prediction.util;
 
 public class ApiConfig {
 
-    public static final String BASE_URL = "https://swiftsoftix.com/cricpro/";
+    public static final String BASE_URL = "https://swiftsoftix.com/crickgo/";
     public static final String GAMES_= BASE_URL+"api/";
     public static final String IMG = BASE_URL+"img/";
     private static final String URL1 = GAMES_+"api.php?";

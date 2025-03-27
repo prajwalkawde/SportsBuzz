@@ -61,8 +61,9 @@
 
                             <LinearLayout
                                 android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
+                                android:layout_height="40dp"
                                 android:background="@color/colorPrimary"
+                                android:gravity="center"
                                 android:orientation="vertical"
                                 android:paddingTop="3dp"
                                 android:paddingBottom="3dp">
@@ -74,9 +75,10 @@
                                     android:ellipsize="end"
                                     android:gravity="center"
                                     android:maxLines="1"
+                                    android:text="KKR"
                                     android:textColor="@color/white"
-                                    android:textSize="14sp"
-                                    app:fontFamily="@font/regular_webfont" />
+                                    android:textSize="16sp"
+                                    app:fontFamily="@font/museo_bold" />
 
                                 <TextView
 
@@ -89,6 +91,7 @@
                                     android:maxLines="1"
                                     android:textColor="@color/white"
                                     android:textSize="12sp"
+                                    android:visibility="gone"
                                     app:fontFamily="@font/regular_webfont" />
                             </LinearLayout>
 
@@ -138,8 +141,9 @@
 
                             <LinearLayout
                                 android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
+                                android:layout_height="40dp"
                                 android:background="@color/colorPrimary"
+                                android:gravity="center"
                                 android:orientation="vertical"
                                 android:paddingTop="3dp"
                                 android:paddingBottom="3dp">
@@ -151,8 +155,10 @@
                                     android:ellipsize="end"
                                     android:gravity="center"
                                     android:maxLines="1"
+                                    android:text="MI"
                                     android:textColor="@color/white"
-                                    app:fontFamily="@font/regular_webfont" />
+                                    android:textSize="16sp"
+                                    app:fontFamily="@font/museo_bold" />
 
                                 <TextView
                                     android:id="@+id/tvTeamSubTitle2"
@@ -164,6 +170,7 @@
                                     android:maxLines="1"
                                     android:textColor="@color/white"
                                     android:textSize="12sp"
+                                    android:visibility="gone"
                                     app:fontFamily="@font/regular_webfont" />
                             </LinearLayout>
 
@@ -197,11 +204,12 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="2"
+                    android:fontFamily="@font/museo_bold"
                     android:gravity="center"
                     android:padding="5dp"
                     android:text="Match Preview"
                     android:textColor="@color/black"
-                    android:textSize="16sp" />
+                    android:textSize="20sp" />
 
                 <View
                     android:layout_width="0dp"

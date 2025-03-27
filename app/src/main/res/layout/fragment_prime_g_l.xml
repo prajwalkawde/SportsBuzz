@@ -99,8 +99,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.5"
-                    android:fontFamily="@font/museo_regular"
-                    android:text="Rs. 299/Month"
+                    android:fontFamily="@font/museo_bold"
+                    android:text="Rs. 249/Month"
                     android:textAlignment="textEnd"
                     android:textColor="@color/green" />
 
@@ -125,6 +125,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_margin="5dp"
+        android:visibility="gone"
         app:cardBackgroundColor="@color/white"
         app:cardCornerRadius="20dp">
 
@@ -152,7 +153,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.5"
-                    android:fontFamily="@font/museo_regular"
+                    android:fontFamily="@font/museo_bold"
                     android:text="Rs. 279/Month"
                     android:textAlignment="textEnd"
                     android:textColor="@color/green" />
@@ -178,6 +179,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_margin="5dp"
+        android:visibility="gone"
         app:cardBackgroundColor="@color/white"
         app:cardCornerRadius="20dp">
 
@@ -205,7 +207,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.7"
-                    android:fontFamily="@font/museo_regular"
+                    android:fontFamily="@font/museo_bold"
                     android:text="Rs. 399/Month"
                     android:textAlignment="textEnd"
                     android:textColor="@color/green" />
@@ -259,7 +261,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.5"
-                    android:fontFamily="@font/museo_regular"
+                    android:fontFamily="@font/museo_bold"
                     android:text="Rs. 499/Month"
                     android:textAlignment="textEnd"
                     android:textColor="@color/green" />

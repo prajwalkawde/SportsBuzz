@@ -106,7 +106,7 @@ public class PrimeGLFragment extends Fragment {
                                     .setProductList(
                                             ImmutableList.from(
                                                     QueryProductDetailsParams.Product.newBuilder()
-                                                            .setProductId("ads")
+                                                            .setProductId("cricket_subscription_base")
                                                             .setProductType(BillingClient.ProductType.SUBS)
                                                             .build()))
                                     .build();
@@ -283,7 +283,7 @@ public class PrimeGLFragment extends Fragment {
 
     private boolean verifyValidSignature(String signedData, String signature){
         try{
-            String base64Key ="MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqhHqheiI238tlayAJXkSy/Mb97tIL47h6uc3e6yRrS64JnumQUYGeO+VH5AA+FpYtiQAjlYGfD+q5LOl+KidqLht7NYwPtuchhwxJW4XQ01ZqN+MYipimRESbAbWoenvSahN4UI9cq/GuXYO4hrLK/Q1PIy2lOwf+gxDmLuWtxH6USKpzlUFU2CL/GU9tEeMgDbzfn0muzpamPQ1IYDvA8oXvJpPw0Y0LpswlURB1JsqgNexUb+RYKdzl+sCyUt7oTa888Yh+Kz6yXizLJR6jD9U5uab2TQjsyiPZUJlZg8fkXTK8t7yqAP42pyilahNXebNUDXWyjciq1gpN1gvWQIDAQAB";
+            String base64Key ="MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAjKiurDBUahdhMbQlLNt1QubJM9/bHMX4aIu+kblC1K6Z/TjRHLA6IB6zK+ElW1A9cWxouFptm6pfmje9Z0E60u3S9mAo98JC/9e8Baw9IAPsvEBMg/Jm5Un1Tbt5KVjZtIqB75VJlOOTOfXMb1ydlU6mqEPK1heCtY64y6YzN+81FBFzuo/Qxrdnecg5Q6IxeMd07zltc9umS2QeXj/8RgsE5Zo5+ITCuVSFzCSQgLuLe+xpk5DruHikLcfdiMur2t/2BZiDh/vRglbGvNfZu0DQUK3sgKIUmlDzSK5IXlTF6TAHfvXyNB4zQHXlOkQG7ICedWGkpzhIDzRo4DDrkwIDAQAB";
             return  Security.verifyPurchase(base64Key,signedData, signature);
         }catch (IOException e){
             return  false;

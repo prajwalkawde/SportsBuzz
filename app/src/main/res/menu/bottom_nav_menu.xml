@@ -13,7 +13,6 @@
 
 
     <item
-        android:visible="false"
         android:id="@+id/primeGlBottomMenu"
         android:title="Prime GL+H2h"
         android:icon="@drawable/prime_gl"/>
